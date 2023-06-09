@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 100px;
+}
+
+.container div {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 200px;
+  min-height: 100px;
+  margin: 10px 20px;
+  margin-bottom: 15px;
+}
+
+.wrap-div {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container .source {
+  background-color: #f2f2f2;
+  height: fit-content;
+}
+
+.container .target {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #dedddd;
+  width: 200px;
+  height: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+img {
+  width: 200px;
+  min-height: 100px;
+}
+
+.item {
+  background-color: #fff;
+  border: 1px solid #1e1a1a;
+  padding: 5px;
+  margin-bottom: 5px;
+  cursor: move;
+  align-self: center;
+}
+
+.item:hover {
+  background-color: #f9f9f9;
+}
+
+.item.dragged {
+  opacity: 0.5;
+  background-color: #f5f594;
+}
+
+.message {
+  margin: 20px auto;
+  color: green;
+  text-align: center;
+  font-size: larger;
+}
+
+.reset-btn {
+  margin-top: 10px;
+  display: block;
+  margin: 0 auto;
+  font-size: larger;
+}
+
+p {
+  font-size: larger;
+}
